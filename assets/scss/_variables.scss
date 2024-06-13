@@ -1,0 +1,94 @@
+// Typography =======
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+$fontFamily: 'Roboto',
+sans-serif;
+$headingFont: 'Noto Serif',
+serif;
+// theme fonts size
+$font-xxxl: 5.4rem;
+$font-xxl3: 5rem;
+$font-xxl2: 4.8rem;
+$font-xxl: 4rem;
+$font-xl: 3.6rem;
+$font-lg2: 2.6rem;
+$font-lg: 2rem;
+$font-md: 1.8rem;
+$font-sm: 1.6rem;
+$font-xs: 1.4rem;
+$font-exs: 1.2rem;
+//font-weight
+$font-thin: 100;
+$font-extraLight: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 500;
+$font-bold: 600;
+$font-extraBold: 700;
+$font-black: 800;
+// theme colors ============
+$primary: #483C32;
+$primary-dark: #9F9987;
+$primary-light: #F5F5DC;
+$secondary: #FDAF1A;
+$secondary-light: #f7951d4b;
+$tertiary: #e9b220;
+$tertiary-light: #e9b3204f;
+$dark: #000;
+$mid-dark: #444444;
+$grey: #7E807C;
+$light-grey: #B2B2B2;
+$dark-overlay: #c5c2b8;
+$exta-light:#F2F4F9;
+$white: #fff;
+$error: #E01F26;
+$bg-color:#FBFBF1;
+$tag-bg:#FFFDF7;
+$success: #4BDE97;
+$primary-gradient: linear-gradient(180deg,
+#F5F5DC 0%,
+#DFDFC0 100%);
+$duplicate: #B894F3;
+$deleted: #C29D6E;
+$light-border: #FFA27D;
+//theme media
+$xxl-width: 1850px;
+$xl-width: 1480px;
+$lg-width: 1300px;
+$md-width: 1100px;
+$sm-width: 992px;
+$xs-width: 667px;
+@mixin device-xxl {
+    @media (min-width: #{$xxl-width}) {
+        @content;
+    }
+}
+
+@mixin device-xl {
+    @media (max-width: #{$xl-width}) {
+        @content;
+    }
+}
+
+@mixin device-lg {
+    @media (max-width: #{$lg-width}) {
+        @content;
+    }
+}
+
+@mixin device-md {
+    @media (max-width: #{$md-width}) {
+        @content;
+    }
+}
+
+@mixin device-sm {
+    @media (max-width: #{$sm-width}) {
+        @content;
+    }
+}
+
+@mixin device-xs {
+    @media (max-width: #{$xs-width}) {
+        @content;
+    }
+}
