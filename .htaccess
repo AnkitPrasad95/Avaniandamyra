@@ -1,0 +1,14 @@
+RewriteEngine On
+ErrorDocument 404 /app/404.php
+
+RewriteRule ^cart/?$ order-list.php
+RewriteRule ^wishlist/?$ wishlist.php
+RewriteRule ^order-histories/?$ order-histories.php
+RewriteRule ^product-category/([0-9a-zA-Z_-]+)?$ listing.php?CatUrl=$1 [NC,L,QSA]
+RewriteRule ^product-category/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)?$ listing.php?CatUrl=$1&childUrl=$2 [NC,L,QSA]
+RewriteRule ^product-category/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)?$ listing.php?grandCatUrl=$1&CatUrl=$2&childUrl=$3 [NC,L,QSA]
+
+
+
+
+
